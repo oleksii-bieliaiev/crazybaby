@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const NavBar = () => {
   return (
-    <div className='flex col-start-1 col-span-12 lg:h-[80px] mb-20 mt-7.5'>
+    <div className='flex col-start-1 col-span-12 2xl:mb-10 lg:mb-17 mt-7'>
       <div className='flex w-full h-full justify-between items-center z-20 lg:pt-0 2xl:pb-0 2xl:mt-0 lg:pb-0 md:pt-6 sm:pt-6 md:pb-12 sm:pb-12 max-sm:pb-0 max-sm:pt-6 max-sm:w-full '>
         <Image
           src="/images/logo.svg"
