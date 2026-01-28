@@ -4,8 +4,8 @@ import Image from 'next/image'
 
 const NavBar = () => {
   return (
-    <div className='flex col-start-1 col-span-12 2xl:mb-10 lg:mb-17 mt-7'>
-      <div className='flex w-full h-full justify-between items-center z-20 lg:pt-0 2xl:pb-0 2xl:mt-0 lg:pb-0 md:pt-6 sm:pt-6 md:pb-12 sm:pb-12 max-sm:pb-0 max-sm:pt-6 max-sm:w-full '>
+    <div className='flex col-start-1 col-span-12 2xl:mb-10 lg:mb-17 md:mb-27 mt-7'>
+      <div className='flex w-full h-full justify-between items-center z-20 lg:pt-0 2xl:pb-0 2xl:mt-0 lg:pb-0 md:pt-0 sm:pt-6 md:pb-0 sm:pb-12 max-sm:pb-0 max-sm:pt-6 max-sm:w-full '>
         <Image
           src="/images/logo.svg"
           alt="Company Logo"
@@ -14,11 +14,21 @@ const NavBar = () => {
           className='object-contain'
         />
 
-        <div className='text-[#4F4F4F] lg:gap-15 lg:flex hidden items-center'>
-          <a href='#features' className='uppercase relative cursor-pointer hover:text-[#03839E] before:absolute before:left-0 before:bottom-0 before:h-[1px] text-[14px] font-normal leading-[100%] before:w-full before:bg-[#03839E] before:scale-x-0 before:origin-bottom-left before:transition-transform before:duration-300 hover:before:scale-x-100'>
+        <div className='text-[#4F4F4F] lg:gap-15 md:gap-7 flex items-center'>
+          <a href='#features' className="
+            uppercase relative cursor-pointer text-[14px] font-normal leading-[100%]
+            transition-all duration-300
+          hover:text-[#131313]
+            hover:drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]
+          ">
             specs
           </a>
-          <a href='#about_us' className='uppercase relative cursor-pointer hover:text-[#03839E] before:absolute before:left-0 before:bottom-0 before:h-[1px]  text-[14px] font-normal leading-[18%] before:w-full before:bg-[#03839E] before:scale-x-0 before:origin-bottom-left before:transition-transform before:duration-300 hover:before:scale-x-100'>
+          <a href='#features' className="
+            uppercase relative cursor-pointer text-[14px] font-normal leading-[100%]
+            transition-all duration-300
+          hover:text-[#131313]
+            hover:drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)]
+          ">
             en / ua
           </a>
 
@@ -28,7 +38,7 @@ const NavBar = () => {
           </button>
 
           <a
-            className='pl-0 flex hover:opacity-50 transition-opacity duration-300 cursor-pointer'
+            className='pl-0 flex hover:drop-shadow-[0_1px_2px_rgba(0,0,0,0.7)] transition-drop-shadow duration-300 cursor-pointer'
           >
             <Image
               src="/images/menu.svg"
